@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  assetto:
+    build: .
+    container_name: assetto-server
+    env_file: .env
+    volumes:
+      - server:/server
+    
+
+volumes:
+    server:
